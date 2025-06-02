@@ -45,6 +45,10 @@ namespace JobBoardBll.Services
                 _unitOfWork.ApplicationRepo.Delete(id);
                 _unitOfWork.Save();
             }
+            else
+            {
+                throw new Exception("Application not found");
+            }
 
         }
     }

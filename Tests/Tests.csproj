@@ -22,7 +22,9 @@
     <ProjectReference Include="..\AutoMapper\AutoMapperProfiles.csproj" />
     <ProjectReference Include="..\BusinessModels\BusinessModels.csproj" />
     <ProjectReference Include="..\DomainData\DomainData.csproj" />
+    <ProjectReference Include="..\DtoModels\DtoModels.csproj" />
     <ProjectReference Include="..\JobBoardBll\JobBoardBll.csproj" />
+    <ProjectReference Include="..\JobBoard\JobBoard.csproj" />
   </ItemGroup>
 
   <ItemGroup>

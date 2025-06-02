@@ -40,6 +40,10 @@ namespace JobBoardBll.Services
                 _unitOfWork.VacancyRepo.Delete(id);
                 _unitOfWork.Save();
             }
+            else
+            {
+                throw new Exception("Vacancy not found");
+            }
         }
 
         public List<VacancyBusinessModel> SearchVacancies(string searchTerm)

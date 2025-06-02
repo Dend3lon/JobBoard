@@ -41,6 +41,10 @@ namespace JobBoardBll.Services
                 _unitOfWork.ResumeRepo.Delete(id);
                 _unitOfWork.Save();
             }
+            else
+            {
+                throw new Exception("Resume not found");
+            }
         }
 
         public List<ResumeBusinessModel> SearchResumes(string searchTerm)
